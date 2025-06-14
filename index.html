@@ -10,6 +10,71 @@
     <link rel="icon" href="Ico.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container-fluid">
+            <a href="index.html" class="link-logo">
+                <img src="logo.webp" alt="Logo devaria" width="50px" />
+            </a>
+            
+            <div class="d-flex align-items-center">
+                <!-- Accessibility buttons for mobile -->
+                <button class="btn btn-outline-secondary btn-sm me-2 d-lg-none" id="darkModeToggle" title="Modo Escuro">
+                    <i class="bi bi-moon"></i>
+                </button>
+                
+                <!-- Hamburger menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-section="dashboard">
+                            <i class="bi bi-house-door"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="transactions">
+                            <i class="bi bi-credit-card"></i> Transações
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="goals">
+                            <i class="bi bi-bullseye"></i> Metas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="reports">
+                            <i class="bi bi-graph-up"></i> Relatórios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="settings">
+                            <i class="bi bi-gear"></i> Configurações
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Desktop accessibility controls -->
+                <div class="d-none d-lg-flex ms-3">
+                    <button class="btn btn-outline-secondary btn-sm me-2" id="darkModeToggleDesktop" title="Modo Escuro">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
